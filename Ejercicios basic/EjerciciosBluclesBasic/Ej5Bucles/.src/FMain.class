@@ -1,0 +1,12 @@
+' Gambas class file
+
+Public Sub CuentaAtras_Click()
+Dim i As Integer
+i = 20
+
+  While (i >= 1)
+    n.Text = n.text & i & "\n"
+    i -= 1
+  Wend
+
+End

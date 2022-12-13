@@ -1,0 +1,77 @@
+' Gambas class file
+
+cajita As CajaFuerte = New CajaFuerte
+
+
+Public Sub AbrirCaja_Click()
+
+cajita.open(TBPassword.Text)
+If cajita.bAbierta = True Then 
+  Inicializado.text = "Caja abierta"
+  CerrarCaja.Enabled = True
+  CerrarCaja.Visible = True
+  AbrirCaja.Enabled = False
+  AbrirCaja.Visible = False
+  
+  Else If cajita.bAbierta = False Then 
+    Inicializado.text = "Clave incorrecta"
+Endif
+End
+
+Public Sub CambiarClave_Click()
+
+  cajita.changePassword(TBPassword.Text, TBNewPassword.Text)
+  If cajita.resultado = True Then 
+    TBNewPassword.Enabled = True
+    TBNewPassword.Visible = True
+    CambiaC.Enabled = True
+    CambiaC.Visible = True
+    CambiarClave.Enabled = False
+    CambiarClave.Visible = False
+    Else If cajita.resultado = False Then 
+      Inicializado.text = "Clave incorrecta"
+  Endif
+
+End
+
+Public Sub CambiaC_Click()
+
+  If TBNewPassword.Length = 4 Then 
+    cajita.clave = TBNewPassword.Text
+    Inicializado.Text = "Clave cambiada"
+    TBNewPassword.Enabled = False
+    TBNewPassword.Visible = False
+    CambiaC.Enabled = False
+    CambiaC.Visible = False
+    CambiarClave.Enabled = True
+    CambiarClave.Visible = True
+    Else If TBNewPassword.Length > 4 Then 
+      Inicializado.Text = "Clave demasiado larga (necesita 4 digitos)"
+    Else If TBNewPassword.Length < 4 Then 
+      Inicializado.Text = "Clave muy corta (necesita 4 digitos)"
+      
+  Endif
+
+End
+
+Public Sub CerrarCaja_Click()
+  
+  If cajita.bAbierta = True Then 
+  cajita.close
+  Inicializado.Text = "Caja cerrada"
+  CerrarCaja.Enabled = False
+  CerrarCaja.Visible = False
+  AbrirCaja.Enabled = True
+  AbrirCaja.Visible = True
+  Else If cajita.bAbierta = False Then 
+    Inicializado.Text = "La caja no esta abierta"
+  Endif
+  
+  
+End
+
+Public Sub PararProg_Click()
+
+  Quit 
+
+End

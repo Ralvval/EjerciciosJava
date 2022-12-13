@@ -1,0 +1,24 @@
+' Gambas class file
+
+Public Sub bNombre_Click()
+
+  Dim nombre As String = "José Álvarez"
+  LFinal.text = "El nombre es " & nombre
+
+End
+
+
+Public Sub bDireccion_Click()
+
+  Dim direccion As String = "C/Flores N4 3ºB"
+  LFinal.text = "La dirección es " & direccion
+
+End
+
+
+Public Sub bTlf_Click()
+
+  Dim tlf As String = "952123456"
+  LFinal.text = "El teléfono es " & tlf
+
+End

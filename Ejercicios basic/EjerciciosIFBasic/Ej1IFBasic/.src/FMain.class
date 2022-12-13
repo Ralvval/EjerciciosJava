@@ -1,0 +1,20 @@
+' Gambas class file
+
+Private hora As Integer
+
+Public Sub bSaludo_Click()
+hora = TBHora.Text
+
+  If (hora >= 00 And hora <= 23) Then 
+    If (hora >= 6 And hora <= 12) Then 
+    LSaludo.text = "Son las " & TBHora.text & " ¡Buenos días!"
+    Else If (hora >= 13 And hora <= 20) Then 
+      LSaludo.Text = "Son las " & TBHora.text & " ¡Buenas tardes!"
+       Else 
+        LSaludo.Text = "Son las " & TBHora.text & " ¡Buenas noches!"
+    Endif
+    Else 
+      LSaludo.Text = "Introduce una hora correcta"
+    Endif
+
+End

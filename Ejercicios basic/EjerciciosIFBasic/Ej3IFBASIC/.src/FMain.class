@@ -1,0 +1,22 @@
+' Gambas class file
+
+Private horas As Integer
+Private varpaga1 As Integer
+Private varpaga2 As Integer
+Private cuantiafinal As Integer
+
+Public Sub bCalcular_Click()
+  varpaga1 = 15
+  varpaga2 = 20
+  horas = TBHoras.Text
+  
+  If (horas > 0) Then 
+    If (horas <= 40) Then 
+      cuantiafinal = horas * varpaga1
+      LSalario.text = "Tu salario semanal es de " & cuantiafinal & " euros."
+    Else If (horas > 40) Then 
+      cuantiafinal = (40 * varpaga1) + (horas - 40) * varpaga2
+      LSalario.text = "Tu salario semanal es de " & cuantiafinal & " euros."
+    Endif
+  Endif
+End

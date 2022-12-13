@@ -1,0 +1,24 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { LIntro Label
+    MoveScaled(12,6,45,6)
+    Font = Font["+3"]
+    Text = ("Introduce un número del 1 al 7")
+  }
+  { TBNum TextBox
+    MoveScaled(19,13,24,6)
+    Font = Font["+3"]
+  }
+  { BDia Button
+    MoveScaled(14,23,34,18)
+    Font = Font["+3"]
+    Text = ("Mostrar día de la semana")
+  }
+  { LResultado Label
+    MoveScaled(1,44,62,7)
+    Font = Font["+2"]
+    Alignment = Align.Center
+  }
+}

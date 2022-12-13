@@ -1,0 +1,26 @@
+' Gambas class file
+
+
+Public Sub BSuma_Click()
+
+  LNumFinal.Text = TBX.Text + TBY.Text
+
+End
+
+Public Sub BResta_Click()
+
+  LNumFinal.Text = TBX.Text - TBY.Text
+
+End
+
+Public Sub BMult_Click()
+
+  LNumFinal.Text = TBX.Text * TBY.Text
+
+End
+
+Public Sub BDiv_Click()
+
+  LNumFinal.Text = TBX.Text / TBY.Text
+
+End

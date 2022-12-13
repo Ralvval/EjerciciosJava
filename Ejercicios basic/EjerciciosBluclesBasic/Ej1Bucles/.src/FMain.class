@@ -1,0 +1,15 @@
+' Gambas class file
+
+Private numero As Integer
+Private multiplo As Integer
+
+Public Sub bMultiplos_Click()
+  numero = TBNum.Text
+  Dim i As Integer
+  
+  For i = 0 To 10 Step 1
+    multiplo = numero * i
+    LMult.text = LMult.Text & multiplo & "\n"
+  Next 
+
+End

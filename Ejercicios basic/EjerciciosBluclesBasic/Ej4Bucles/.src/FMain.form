@@ -1,0 +1,18 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,88,70)
+  { LTitulo Label
+    MoveScaled(30,3,32,7)
+    Font = Font["+5"]
+    Text = ("Ejercicio 4 bucles")
+  }
+  { BCuentaAtras Button
+    MoveScaled(32,12,24,6)
+    Text = ("Mostrar cuenta atrás")
+  }
+  { Label1 Label
+    MoveScaled(32,21,25,47)
+    Alignment = Align.Center
+  }
+}

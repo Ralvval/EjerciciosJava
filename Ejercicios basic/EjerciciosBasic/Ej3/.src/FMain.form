@@ -1,0 +1,12 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Button1 Button
+    MoveScaled(15,14,35,30)
+    Text = ("Pulsa para mostrar mi nombre")
+  }
+  { Label1 Label
+    MoveScaled(11,52,42,6)
+  }
+}

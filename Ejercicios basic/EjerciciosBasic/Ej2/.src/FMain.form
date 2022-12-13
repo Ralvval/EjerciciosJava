@@ -1,0 +1,44 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,84,49)
+  { TBX TextBox
+    MoveScaled(11,10,24,7)
+  }
+  { TBY TextBox
+    MoveScaled(46,10,24,7)
+  }
+  { BSuma Button
+    MoveScaled(2,27,16,4)
+    Text = ("Sumar")
+  }
+  { BResta Button
+    MoveScaled(24,27,16,4)
+    Text = ("Restar")
+  }
+  { BMult Button
+    MoveScaled(45,27,16,4)
+    Text = ("Multiplicar")
+  }
+  { BDiv Button
+    MoveScaled(66,27,16,4)
+    Text = ("Dividir")
+  }
+  { LIndicador Label
+    MoveScaled(3,38,36,6)
+    Font = Font["+3"]
+    Text = ("El valor de la operación es de: ")
+  }
+  { LNumFinal Label
+    MoveScaled(42,39,22,4)
+    Font = Font["+3"]
+  }
+  { Label1 Label
+    MoveScaled(10,6,32,3)
+    Text = ("Introduce el valor a asignar a X")
+  }
+  { Label2 Label
+    MoveScaled(45,6,32,3)
+    Text = ("Introduce el valor a asignar a Y")
+  }
+}

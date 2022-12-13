@@ -1,0 +1,21 @@
+' Gambas class file
+
+Public Sub bNombre_Click()
+
+  LFinal.text = "El nombre es " & TBData.text
+
+End
+
+
+Public Sub bDireccion_Click()
+
+  LFinal.text = "La dirección es " & TBData.text
+
+End
+
+
+Public Sub bTlf_Click()
+
+  LFinal.text = "El teléfono es " & TBData.text
+
+End
