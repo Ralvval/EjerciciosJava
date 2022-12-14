@@ -1,0 +1,40 @@
+' Gambas class file
+
+'ESTADO
+Private bAbierta As Boolean
+Private clave As String
+
+'COMPORTAMIENTO - METODOS
+
+Public Sub _new()
+  
+  bAbierta = False
+  clave = "0000"
+  
+End
+
+Public Function changePassword(oldpassword As String, newPassword As String) As Boolean
+  
+  If (oldpassword = clave) Then 
+    clave = newPassword
+    Return True
+    Else 
+      Return False
+  Endif 
+End
+
+Public Function open(password As String) As Boolean
+  
+  Dim resultado As Boolean
+  resultado = False
+  If (clave = password) Then 
+    resultado = True
+   Endif 
+   Return resultado
+End 
+
+Public Sub close()
+  
+  bAbierta = False
+  
+End

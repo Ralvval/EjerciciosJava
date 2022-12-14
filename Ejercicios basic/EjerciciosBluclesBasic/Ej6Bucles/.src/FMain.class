@@ -1,0 +1,12 @@
+' Gambas class file
+
+Public Sub BCuentaAtras_Click()
+Dim i As Integer
+i = 20
+
+  Do While (i >= 1)
+    Label1.Text = Label1.text & i & "\n"
+    i -= 1
+  Loop 
+  
+End

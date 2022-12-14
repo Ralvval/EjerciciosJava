@@ -1,0 +1,27 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,79,83)
+  { LTitulo Label
+    MoveScaled(23,3,39,6)
+    Font = Font["+5"]
+    Text = ("Ejercicio 2 Bucles")
+  }
+  { LIntro Label
+    MoveScaled(6,10,72,6)
+    Font = Font["+3"]
+    Text = ("Introduce un número para ver sus 10 primeros múltiplos")
+  }
+  { TBNum TextBox
+    MoveScaled(25,17,24,8)
+    Font = Font["+2"]
+    Alignment = Align.Center
+  }
+  { LMult Label
+    MoveScaled(9,34,63,46)
+  }
+  { bMultiplos Button
+    MoveScaled(29,28,16,4)
+    Text = ("Ver múltiplos")
+  }
+}

@@ -1,0 +1,25 @@
+' Gambas class file
+
+Private n1 As Float
+Private n2 As Float
+Private n3 As Float
+
+Public Sub Ordenar_Click()
+  n1 = Num1.Text
+  n2 = Num2.Text
+  n3 = Num3.Text
+  
+  If (n1 >= n2 And n2 >= n3) Then
+            Resultado.Text = "El orden es: " & n1 & " " & n2 & " " & n3
+          Else If (n1 >= n3 And n3 >= n2) Then
+            Resultado.Text = "El orden es: " & n1 & " " & n3 & " " & n2
+          Else If (n2 >= n1 And n1 >= n3) Then 
+            Resultado.Text = "El orden es: " & n2 & " " & n1 & " " & n3
+          Else If (n2 >= n3 And n3 >= n1) Then
+            Resultado.Text = "El orden es: " & n2 & " " & n3 & " " & n1
+          Else If (n3 >= n1 And n1 >= n2) Then
+            Resultado.Text = "El orden es: " & n3 & " " & n1 & " " & n2
+          Else If (n3 >= n2 And n2 >= n1)
+            Resultado.Text = "El orden es: " & n3 & " " & n2 & " " & n1
+  Endif 
+End

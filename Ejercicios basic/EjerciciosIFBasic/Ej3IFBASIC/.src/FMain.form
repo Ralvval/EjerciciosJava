@@ -1,0 +1,28 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,98,72)
+  Text = ("Calculadora sala semanalrio")
+  { LIntro Label
+    MoveScaled(22,15,49,3)
+    Font = Font["+3"]
+    Text = ("Introduce el número de horas trabajadas")
+  }
+  { LTitulo Label
+    MoveScaled(21,1,58,7)
+    Font = Font["+7"]
+    Text = ("Calculadora salario semanal")
+  }
+  { TBHoras TextBox
+    MoveScaled(31,21,35,9)
+    Alignment = Align.Center
+  }
+  { bCalcular Button
+    MoveScaled(34,40,30,9)
+    Text = ("Calcular mi salario semanal")
+  }
+  { LSalario Label
+    MoveScaled(1,56,97,7)
+    Font = Font["+3"]
+  }
+}

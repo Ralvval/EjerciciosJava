@@ -1,0 +1,22 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,73,70)
+  { LIntro Label
+    MoveScaled(14,7,49,5)
+    Font = Font["+3"]
+    Text = ("Introduce una hora de las 00 a las 23")
+  }
+  { TBHora TextBox
+    MoveScaled(24,13,24,4)
+  }
+  { LSaludo Label
+    MoveScaled(1,46,70,12)
+    Font = Font["+3"]
+  }
+  { bSaludo Button
+    MoveScaled(14,26,46,15)
+    Font = Font["+5"]
+    Text = ("Mostrar saludo")
+  }
+}

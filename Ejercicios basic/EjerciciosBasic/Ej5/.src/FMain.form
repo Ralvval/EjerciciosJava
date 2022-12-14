@@ -1,0 +1,34 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,70,64)
+  { LInicial Label
+    MoveScaled(6,19,59,8)
+    Font = Font["+3"]
+    Text = ("¿Qué tipo de datos son los que has introducido?")
+  }
+  { bNombre Button
+    MoveScaled(1,29,16,4)
+    Text = ("Nombre")
+  }
+  { bDireccion Button
+    MoveScaled(28,29,16,4)
+    Text = ("Dirección")
+  }
+  { bTlf Button
+    MoveScaled(53,29,16,4)
+    Text = ("Teléfono")
+  }
+  { LFinal Label
+    MoveScaled(8,40,55,4)
+    Font = Font["+2"]
+  }
+  { LIntro Label
+    MoveScaled(23,2,27,6)
+    Font = Font["+3"]
+    Text = ("Introduce tus datos")
+  }
+  { TBData TextBox
+    MoveScaled(10,9,49,8)
+  }
+}

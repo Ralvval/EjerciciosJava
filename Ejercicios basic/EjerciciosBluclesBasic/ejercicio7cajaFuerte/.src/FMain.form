@@ -1,0 +1,48 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Label1 Label
+    MoveScaled(6,7,9,3)
+    Text = ("Password")
+  }
+  { TBPassword TextBox
+    MoveScaled(17,6,24,4)
+    Text = ("TBPassword")
+  }
+  { TBNewPassword TextBox
+    MoveScaled(17,12,24,4)
+    Visible = False
+    Enabled = False
+    Text = ("TBNewPassword")
+  }
+  { AbrirCaja Button
+    MoveScaled(5,41,16,4)
+    Text = ("Abrir Caja")
+  }
+  { CambiarClave Button
+    MoveScaled(24,41,16,4)
+    Text = ("Cambiar Clave")
+  }
+  { CerrarCaja Button
+    MoveScaled(5,41,16,4)
+    Visible = False
+    Enabled = False
+    Text = ("Cerrar caja")
+  }
+  { Inicializado Label
+    MoveScaled(5,52,54,8)
+    Background = Color.Green
+    Text = ("Inicializado")
+  }
+  { CambiaC Button
+    MoveScaled(24,41,16,4)
+    Visible = False
+    Enabled = False
+    Text = ("Cambiar clave")
+  }
+  { PararProg Button
+    MoveScaled(44,41,16,4)
+    Text = ("Salir")
+  }
+}

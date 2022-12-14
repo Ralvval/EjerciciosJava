@@ -1,0 +1,9 @@
+' Gambas class file
+
+Public Sub Button1_Click()
+  
+  Dim nombre As String
+  nombre = "José Álvarez"
+  Label1.text = "Mi nombre es " & nombre
+
+End

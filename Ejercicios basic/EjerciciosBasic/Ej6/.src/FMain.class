@@ -1,0 +1,11 @@
+' Gambas class file
+
+
+Public Sub bCalcular_Click()
+
+  Dim iva As Float
+  iva = TBBim.Text * 0.21
+  LIVANum.text = iva
+  LFacturaTotal.text = TBBim.text + iva
+
+End

@@ -1,0 +1,57 @@
+' Gambas class file
+
+
+
+Public Sub Si_Click()
+
+  Actuacion.text = "Dar liquidos de absorcion rápida (zumos, azucar....) \n Repetir glucemia 5-10 min despues \n Dar hidratos de carbono de absorcion lenta (galletas, bocadillo...) "
+  si.Enabled = False
+  si.Visible = False
+  no.Visible = False
+  no.Enabled = False
+  continuar.Enabled = True
+  continuar.Visible = True
+
+End
+
+Public Sub No_Click()
+
+  Actuacion.text = "NO DAR NADA POR LA BOCA \n Administrar glucagón \n Avisar a la familia y a emergencias"
+  si.Enabled = False
+  si.Visible = False
+  no.Visible = False
+  no.Enabled = False
+  continuar.Enabled = True
+  continuar.Visible = True
+
+End
+
+Public Sub continuar_Click()
+
+  If cantidad.Value >= 70 Then 
+    If cantidad.Value <= 110 Then 
+      informacion.Text = "Tiene niveles normales"
+    Endif
+    Else If cantidad.Value < 70 Then 
+      informacion.Text = "Esta consciente?"
+      si.Enabled = True
+      si.Visible = True
+      no.Visible = True
+      no.Enabled = True
+      continuar.Enabled = False
+      continuar.Visible = False
+  Endif 
+  If cantidad.Value > 180 Then 
+      informacion.Text = "Tiene hiperglucemia"
+      Actuacion.Visible = True
+      Actuacion.Text = "Debe administrar agua y avisar a su familia"
+      Endif 
+      
+  If cantidad.Value > 110 Then
+    If cantidad.Value <= 180 Then
+      informacion.Text = "Tiene los niveles de azucar un poco altos pero \n no esta relacionado con la diabetes"
+    Endif
+  Endif
+
+
+End

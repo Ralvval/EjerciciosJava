@@ -1,0 +1,30 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,59,54)
+  { Indicacion Label
+    MoveScaled(12,2,36,11)
+    Font = Font["+3"]
+    Text = ("Introduce los tres numeros")
+  }
+  { Num1 TextBox
+    MoveScaled(3,15,14,8)
+    Alignment = Align.Center
+  }
+  { Num2 TextBox
+    MoveScaled(21,15,15,8)
+    Alignment = Align.Center
+  }
+  { Num3 TextBox
+    MoveScaled(41,15,15,8)
+    Alignment = Align.Center
+  }
+  { Ordenar Button
+    MoveScaled(21,29,16,4)
+    Text = ("Ordenar")
+  }
+  { Resultado Label
+    MoveScaled(3,36,51,9)
+    Font = Font["+3"]
+  }
+}

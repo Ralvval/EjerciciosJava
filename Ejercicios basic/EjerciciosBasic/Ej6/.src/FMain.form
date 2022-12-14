@@ -1,0 +1,46 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,73,71)
+  { LBim Label
+    MoveScaled(5,6,49,6)
+    Font = Font["+3"]
+    Text = ("Introduce la base imponible:")
+  }
+  { TBBim TextBox
+    MoveScaled(43,4,24,10)
+    Font = Font["+2"]
+  }
+  { LIVA Label
+    MoveScaled(5,24,55,8)
+    Font = Font["+3"]
+    Text = ("El IVA de tu base imponible es de: ")
+  }
+  { LEuros1 Label
+    MoveScaled(60,26,8,3)
+    Font = Font["+3"]
+    Text = ("€")
+  }
+  { LIVANum Label
+    MoveScaled(47,25,15,5)
+    Font = Font["+3"]
+  }
+  { LFactura Label
+    MoveScaled(5,46,29,3)
+    Font = Font["+3"]
+    Text = ("El total a pagar es de:")
+  }
+  { LEuros2 Label
+    MoveScaled(52,46,8,3)
+    Font = Font["+3"]
+    Text = ("€")
+  }
+  { LFacturaTotal Label
+    MoveScaled(32,45,22,5)
+    Font = Font["+3"]
+  }
+  { bCalcular Button
+    MoveScaled(47,16,16,4)
+    Text = ("Calcular total")
+  }
+}

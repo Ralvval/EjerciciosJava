@@ -1,0 +1,12 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,34,70)
+  { CuentaAtras Button
+    MoveScaled(5,54,24,6)
+    Text = ("Cuenta atras")
+  }
+  { n Label
+    MoveScaled(5,4,25,47)
+  }
+}

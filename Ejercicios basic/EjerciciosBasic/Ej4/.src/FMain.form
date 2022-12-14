@@ -1,0 +1,26 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,70,64)
+  { LInicial Label
+    MoveScaled(18,10,37,8)
+    Font = Font["+3"]
+    Text = ("¿Qué datos quieres mostrar?")
+  }
+  { bNombre Button
+    MoveScaled(1,24,16,4)
+    Text = ("Nombre")
+  }
+  { bDireccion Button
+    MoveScaled(28,24,16,4)
+    Text = ("Dirección")
+  }
+  { bTlf Button
+    MoveScaled(53,24,16,4)
+    Text = ("Teléfono")
+  }
+  { LFinal Label
+    MoveScaled(8,40,55,4)
+    Font = Font["+2"]
+  }
+}

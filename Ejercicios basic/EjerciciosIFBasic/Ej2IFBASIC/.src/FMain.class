@@ -1,0 +1,34 @@
+' Gambas class file
+
+Private dia As Integer
+
+Public Sub BDia_Click()
+  dia = TBNum.Text
+  
+  If (dia >= 1 And dia <= 7) Then
+    Select dia
+      Case 1
+        LResultado.text = "El día 1 corresponde al Lunes"
+  
+      Case 2
+        LResultado.text = "El día 2 corresponde al Martes"
+    
+      Case 3
+        LResultado.text = "El día 3 corresponde al Miércoles"
+  
+      Case 4
+        LResultado.text = "El día 4 corresponde al Jueves"
+    
+      Case 5
+        LResultado.text = "El día 5 corresponde al Viernes"
+  
+      Case 6
+        LResultado.text = "El día 6 corresponde al Sábado"
+    
+      Case 7
+        LResultado.text = "El día 7 corresponde al Domingo"
+    End Select
+    Else 
+      LResultado.Text = "Introduce un número de día correcto"
+  Endif
+End
